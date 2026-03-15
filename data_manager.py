@@ -2,7 +2,7 @@ import json
 import os
 from datetime import datetime
 
-DATA_FILE = "data/team_data.json"  # Define a constant for the file path
+DATA_FILE = "team_data.json"  # Define a constant for the file path
 
 def load_data():
     """Loads data from the JSON file.  Creates the file if it doesn't exist."""

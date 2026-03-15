@@ -6,9 +6,6 @@ def is_positive_integer(value):
     """Checks if a value is a positive integer."""
     try:
         value = int(value)
-        return valu{
-            "team_members": []
-        }
-        e > 0
+        return value > 0
     except ValueError:
         return False

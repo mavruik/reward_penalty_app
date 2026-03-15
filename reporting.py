@@ -7,18 +7,7 @@ def get_most_kudos(data):
 
 
 def get_most_whip_points(data):
-    """Returns the team member with thedef validate_member_id(data, member_id):
-        """Validates that a member ID is unique."""
-        return not any(member['id'] == member_id for member in data['team_members'])
-    
-    def is_positive_integer(value):
-        """Checks if a value is a positive integer."""
-        try:
-            value = int(value)
-            return value > 0
-        except ValueError:
-            return False
-     most whip points."""
+    """Returns the team member with the most whip points."""
     if not data['team_members']:
         return None
     return max(data['team_members'], key=lambda x: x['whip_points'])
